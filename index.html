@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Homepage</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!--
+
+Template 2075 Digital Team
+
+http://www.tooplate.com/view/2075-digital-team
+
+-->
+	
+	<script type="text/javascript" src="js/functionality.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/et-line-font.css">
+	<link rel="stylesheet" href="css/nivo-lightbox.css">
+	<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css">
+	<link href="css/bmicalc.css" rel="stylesheet" type="text/css">
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+<!-- preloader section -->
+<div class="preloader">
+	<div class="sk-spinner sk-spinner-circle">
+       <div class="sk-circle1 sk-circle"></div>
+       <div class="sk-circle2 sk-circle"></div>
+       <div class="sk-circle3 sk-circle"></div>
+       <div class="sk-circle4 sk-circle"></div>
+       <div class="sk-circle5 sk-circle"></div>
+       <div class="sk-circle6 sk-circle"></div>
+       <div class="sk-circle7 sk-circle"></div>
+       <div class="sk-circle8 sk-circle"></div>
+       <div class="sk-circle9 sk-circle"></div>
+       <div class="sk-circle10 sk-circle"></div>
+       <div class="sk-circle11 sk-circle"></div>
+       <div class="sk-circle12 sk-circle"></div>
+    </div>
+</div>
+
+<!-- navigation section -->
+<section class="navbar navbar-fixed-top custom-navbar" role="navigation">
+	<div class="container">
+	  <div class="navbar-header">
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+		  </button>
+<a href="#" class="navbar-brand">
+		  </a><img src="images/LOGO.png"  width="120" height="50" alt=""/>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="index.html" class="smoothScroll">HOME</a></li>
+				<li><a href="#work" class="smoothScroll">BMI</a></li>
+				<li><a href="#about" class="smoothScroll">VIDEO</a></li>
+				<li><a href="LearnMore.html" class="smoothScroll">LEARN MORE</a></li>
+				<li><a href="#team" class="smoothScroll">TEAM</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT</a></li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<!-- home section -->
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-5">
+
+				<h1>WELCOME TO BMI CALCULATOR</h1>				
+				<h3>Aim for a healthy weight. Together we build a healthy lifestyle</h3>
+				<hr>
+				<a href="#work" class="smoothScroll btn btn-danger">CALCULATE BMI</a>
+				<a href="#about" class="smoothScroll btn btn-default">WATCH VIDEO</a>
+			</div>
+		</div>
+	</div>		
+</section>
+
+<!-- work section -->
+<section id="work">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>01</strong>
+					<h1 class="heading bold">BMI CALCULATOR</h1>
+					<hr>
+					<h3>CALCULATE YOUR BMI</h3>
+				</div>
+			</div>
+		    <div class=" col-md-12 wow fadeInUp" data-wow-delay="0.6s">
+  <div class="container" style="margin-top: 40px;">
+    <div class="row">
+      <div class="col-md-6" style="padding-bottom: 5px;">
+        <button type="button" class="btn btn-secondary" style="width: 100%; padding: 10px; "
+          onclick="location.reload(true);">Clear</button>
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-secondary" style="width: 100%; padding: 10px;"
+          onclick="BMIFunction()">Calculate</button>
+      </div>
+    </div>
+  </div>
+<br><br>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-4">
+        <h4>Weight</h4>
+        <form>
+          <div class="form-group">
+            <table style="width:100%">
+              <tr>
+                <td><input id="lbsInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Pounds...">
+                </td>
+                <td>lbs</td>
+              </tr>
+              <tr>
+                <td><input id="kgInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Kilograms...">
+                </td>
+                <td>kg</td>
+              </tr>
+              <tr>
+                <td><input id="gmInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Grams..."></td>
+                <td>gm</td>
+              </tr>
+              <tr>
+                <td><input id="ozInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Ounces..."></td>
+                <td>oz</td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-4">
+        <h4>Height</h4>
+        <form>
+          <div class="form-group">
+            <table style="width:100%">
+              <tr>
+                <td><input id="inchInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Inches..."></td>
+                <td>in</td>
+              </tr>
+				<tr>
+                <td><input id="cmInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Centimeters..."></td>
+                <td>cm</td>
+              </tr>
+              
+              <tr>
+                <td><input id="mInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Meters..."></td>
+                <td>m</td>
+              </tr>
+              <tr>
+                <td><input id="ftInput" type="number" step="0.0001" class="form-control form-control-lg"
+                    placeholder="Feet..."></td>
+                <td>ft</td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-4">
+        <h4>Health Index</h4>
+        <form>
+          <div class="form-group">
+            <div class="indexcol" id="bmi" style="padding-left: 20px; padding-top: 10px;">
+              <p>Body Mass Index...</p>
+            </div>
+            <div class="indexcol" id="calIn" style="padding-left: 20px; padding-top: 10px;">
+              <p>Calorie In...</p>
+            </div>
+            <div class="indexcol" id="calOut" style="padding-left: 20px; padding-top: 10px;">
+              <p>Calorie Out...</p>
+            </div>
+            <div class="indexcol" id="comment" style="padding-left: 20px; padding-top: 10px;">
+              <p>Comment...</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- about section -->
+<section id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>02</strong>
+					<h1 class="heading bold">HOW TO CALCULATE BMI</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<iframe  align="middle" width="500" height="380" src="https://www.youtube.com/embed/t8sIioCX0lk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h3 class="bold">BMI FORMULA</h3>
+				<h1 class="heading bold">To know more about your ideal weight </h1>
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+					<li class="active"><a href="#design" aria-controls="design" role="tab" data-toggle="tab">ABOUT&nbsp;</a></li>
+					<li><a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab">FORMULA</a></li>
+				</ul>
+				<!-- tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="design">
+						<p>BMI <a href="#">body mass index</a> to measure body fat which based on height and weight.</p>
+						<p>The higher the BMI , the higher the risk of any related disease.</p>
+						
+
+					</div>
+					<div role="tabpanel" class="tab-pane" id="mobile">
+						<a href="#">BMI Formula :</a>
+						<p>Metric units: BMI = weight (kg) ÷ height2 (m)</p>
+						<p>US units: BMI = (weight (lb) ÷ height2 (in)) * 703</p>
+					</div>
+					
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- team section -->
+<section id="team">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<div class="section-title">
+					<strong>03</strong>
+					<h1 class="heading bold">TALENTED TEAM</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="0.9s">
+				<div class="team-wrapper">
+					<img src="images/SYAHREEL.png" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Muhammad Syahreel Bin Abdul Aziz</h4>
+							<h3>2021119667</h3>
+							<hr>
+								<h4>+6017-7569371</h4>
+							<h4>muhammadsyahreel @gmail.com</h4>
+	
+						</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.3s">
+				<div class="team-wrapper">
+					<img src="images/AINAN.png" class="img-responsive" alt="team img">
+						<div class="team-des">
+						<h4>Ainan Salsabilla Binti Mohd Khairulnizam</h4>
+							<h3>2021119217</h3>
+							<hr>
+							
+						  <h4>+6011-37485987</h4>
+							<h4>ainansalsabilla00 @gmail.com</h4>
+							
+						</div>
+				</div>
+			</div>
+				
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="images/AQILAH.jpg"   class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Nurul Aqilah   Binti Giman</h4>
+							<h3>2021103487</h3>
+							<hr>
+							<h4>+6013-5902808</h4>
+							<h4>aqilahgiman@gmail.com</h4>
+				  </div>
+			  </div>
+			</div>
+			<div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay="1.6s">
+				<div class="team-wrapper">
+					<img src="images/syira.jpg" height="501" class="img-responsive" alt="team img">
+						<div class="team-des">
+							<h4>Nursyahirah Binti Ismail Johari</h4>
+							<h3>2021102867</h3>
+							<hr>
+								<h4>+6011-62849421</h4>
+								<h4>syiraismail@gmail.com</h4>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- contact section -->
+<section id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 text-center">
+				<div class="section-title">
+					<strong>04</strong>
+					<h1 class="heading bold">CONTACT US</h1>
+					<hr>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 contact-info">
+				<h2 class="heading bold">CONTACT INFO</h2>
+				<p>Have any questions and more inquiries from us? We'd love to hear from you.</p>
+				<p>Please fill in the form given</p>
+			  <div class="col-md-6 col-sm-4">
+				<h3><i class="icon-envelope medium-icon wow bounceIn" data-wow-delay="0.6s"></i> EMAIL</h3>
+				  <p>admin@bmicalculator.com</p>
+				</div>
+			  <div class="col-md-6 col-sm-4">
+				<h3><i class="icon-phone medium-icon wow bounceIn" data-wow-delay="0.6s"></i> PHONES</h3>
+				  <p>010-0200340 | 03-80741234</p>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<form action="#" method="get" class="wow fadeInUp" data-wow-delay="0.6s">
+					<div class="col-md-6 col-sm-6">
+						<input type="text" class="form-control" placeholder="Name" name="name">
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<input type="email" class="form-control" placeholder="Email" name="email">
+					</div>
+					<div class="col-md-12 col-sm-12">
+						<textarea class="form-control" placeholder="Message" rows="7" name="message"></textarea>
+					</div>
+					<div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8">
+						<input type="submit" class="form-control" value="SEND MESSAGE">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div><!-- footer section -->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<p>Copyright © BMI Calculator | Link URL <a href="http://www.tooplate.com" target="_parent">Tooplate</a></p>
+				<hr>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-tumblr wow fadeIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+</section>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/jquery.backstretch.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+</html>

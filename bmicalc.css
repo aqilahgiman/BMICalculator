@@ -1,0 +1,73 @@
+
+.display-4{
+  padding-top: 20px;
+}
+#lbsInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#kgInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#gmInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#ozInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#cmInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#mInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#inchInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#ftInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#bmiInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#calinInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#caloutInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+#ratioInput{
+  width: 80%;
+  margin-top: 20px;
+  font-size: 11px;
+}
+.indexcol{
+  margin-top:16px;
+  margin-bottom:16px;
+  background: #92BEC1;
+  color: #fff;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 14px;
+}

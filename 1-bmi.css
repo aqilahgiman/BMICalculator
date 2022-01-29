@@ -1,0 +1,19 @@
+/* (X) DOES NOT MATTER, COSMETICS */
+* { font-family: arial, sans-serif; }
+#bmi-form * { box-sizing: border-box; }
+#bmi-form input[type=text], #bmi-form input[type=number] { padding: 5px; }
+#bmi-form input[type=number] { width: 100%; }
+#bmi-form {
+  border: 1px solid #eee;
+  background: #f2f2f2;
+  padding: 20px;
+  max-width: 1000px;
+}
+#bmi-form .bmi-label {
+  color: #010B22;
+  font-weight: 700;
+  margin: 10px 0;
+}
+#bmi-form .bmi-row {
+  margin-bottom: 20px;
+}
